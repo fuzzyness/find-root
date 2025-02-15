@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "numerical_analysis"
+name = "find_root"
 version = "0.1.0"
