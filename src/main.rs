@@ -417,7 +417,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Compute the error metrics for the bisection method.
     let (bisection_error1, bisection_error2, bisection_error3) = compute_errors(&bisection_seq);
     // Plot the error metrics on a graph.
-    plot_errors(&bisection_error1, &bisection_error2, &bisection_error3, "Bisection")?;
+    plot_errors(&bisection_error1, &bisection_error2, &bisection_error3, "bisection")?;
 
     // ---------------------------
     // Fixed-Point Iteration
@@ -429,7 +429,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Compute the error metrics for the fixed-point iteration method.
     let (fpi_error1, fpi_error2, fpi_error3) = compute_errors(&fpi_seq);
     // Plot the error metrics on a graph.
-    plot_errors(&fpi_error1, &fpi_error2, &fpi_error3, "Fixed-Point Iteration")?;
+    plot_errors(&fpi_error1, &fpi_error2, &fpi_error3, "fixed-point-iteration")?;
 
     // ---------------------------
     // Newton's Method
@@ -445,7 +445,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Compute the error metrics for Newton's method.
     let (newton_error1, newton_error2, newton_error3) = compute_errors(&newton_seq);
     // Plot the error metrics on a graph.
-    plot_errors(&newton_error1, &newton_error2, &newton_error3, "Newton")?;
+    plot_errors(&newton_error1, &newton_error2, &newton_error3, "newton")?;
 
     // ---------------------------
     // Secant Method
@@ -461,7 +461,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Compute the error metrics for the secant method.
     let (secant_error1, secant_error2, secant_error3) = compute_errors(&secant_seq);
     // Plot the error metrics on a graph.
-    plot_errors(&secant_error1, &secant_error2, &secant_error3, "Secant")?;
+    plot_errors(&secant_error1, &secant_error2, &secant_error3, "secant")?;
 
     // Exit program successfully.
     Ok(())

@@ -207,7 +207,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "find_root"
+name = "findroot"
 version = "0.1.0"
 dependencies = [
  "plotters",
